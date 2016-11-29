@@ -1,0 +1,2 @@
+<Content Include="App_Config\Include\<%= projectType %>\<%= projectType %>.<%= name %>.config" />
+    <Content Include="App_Config\Include\<%= projectType %>\<%= projectType %>.<%= name %>.Serialization.config" />

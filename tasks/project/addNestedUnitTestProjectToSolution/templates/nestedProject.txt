@@ -1,0 +1,3 @@
+		<%= projectGuid %> = <%= projectFolder %>
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+		<%= projectFolder %> = <%= parentFolder %>
+		<%= projectGuid %> = <%= projectFolder %>
+	EndGlobalSection
+EndGlobal

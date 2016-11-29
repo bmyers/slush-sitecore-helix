@@ -1,0 +1,43 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "<%= configFolder %>"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile-ci.js = gulpfile-ci.js
+		gulpfile.js = gulpfile.js
+		publishsettings.targets = publishsettings.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "<%= featureFolder %>"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "<%= foundationFolder %>"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "<%= projectFolder %>"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "<%= solutionName %>", "<%= solutionName %>", "<%= solutionFolder %>"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "<%= solutionName %>.Website", "src\Project\<%= solutionName %>\code\<%= solutionName %>.Website.csproj", "<%= projectGuid %>"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		<%= projectGuid %>.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		<%= projectGuid %>.Debug|Any CPU.Build.0 = Debug|Any CPU
+		<%= projectGuid %>.Release|Any CPU.ActiveCfg = Release|Any CPU
+		<%= projectGuid %>.Release|Any CPU.Build.0 = Release|Any CPU		
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		<%= solutionFolder %> = <%= projectFolder %>
+		<%= projectGuid %> = <%= solutionFolder %>
+		<%= commonProjectFolder %> = <%= projectFolder %>
+		<%= commonProjectGuid %> = <%= commonProjectFolder %>
+	EndGlobalSection
+EndGlobal
